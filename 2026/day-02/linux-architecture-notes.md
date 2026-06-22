@@ -19,13 +19,29 @@ SystemD, initializes the process, it is the first process when system boots, i.e
 
 •	Running: The process is actively running and each process takes up CPU, Memory to execute the code and logic
 
-•	Sleeping: the process is waiting for an event or process.
+•	Sleeping: the process is waiting for an event or process. Here it goes under two stages: 
+
+1. interruptable sleep:  when a process waits for user input, the process goes into the Interruptible sleeping state (s) interruptible sleep state.
+2. uninterruptable sleep: Process pauses while waiting for a critical event/resource (usually I/O) and cannot be killed by kill -9
 
 •	Stopped: The process is being stopped SIGTSTP 
 
 •	Zombie: The process has completed execution, but it’s entry in the process table still exists, waiting for parent to read its exit status.
 
 •	Terminated / Dead (X): The process that has finished execution, freed off all the resources, and no longer on the process table. SIGCHILD
+
+## Linux Process States
+
+![Linux Process States](./images/linux_process_states.svg)
+
+| State | Code | Meaning |
+|-------|------|---------|
+| Running | `R` | On CPU or waiting in run queue |
+| Interruptible sleep | `S` | Waiting, can be woken by signal |
+| Uninterruptible sleep | `D` | Blocked on disk I/O, kill -9 won't work |
+| Stopped | `T` | Paused via SIGSTOP or Ctrl+Z |
+| Zombie | `Z` | Finished but parent hasn't called wait() |
+| Dead | `X` | Fully removed by kernel |
 
 
 **5. List 5 commands you would use daily**
