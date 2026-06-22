@@ -16,11 +16,17 @@ SystemD, initializes the process, it is the first process when system boots, i.e
 
 
 **4. Explain process states (running, sleeping, zombie, etc.)**
+
 •	Running: The process is actively running and each process takes up CPU, Memory to execute the code and logic
+
 •	Sleeping: the process is waiting for an event or process.
+
 •	Stopped: The process is being stopped SIGTSTP 
+
 •	Zombie: The process has completed execution, but it’s entry in the process table still exists, waiting for parent to read its exit status.
+
 •	Terminated / Dead (X): The process that has finished execution, freed off all the resources, and no longer on the process table. SIGCHILD
+
 
 **5. List 5 commands you would use daily**
 
