@@ -1,0 +1,45 @@
+<svg width="600" height="520" viewBox="0 0 600 520" xmlns="http://www.w3.org/2000/svg">
+  <title>OS Architecture – Concentric Circles</title>
+  <desc>Five concentric circles showing OS layers from innermost Hardware to outermost Applications and Utilities</desc>
+
+  <!-- Applications (outermost) -->
+  <circle cx="280" cy="260" r="220" fill="#1a6b3c" stroke="#0d4a29" stroke-width="1"/>
+  <!-- Utilities -->
+  <circle cx="280" cy="260" r="178" fill="#1e7d46" stroke="#0d4a29" stroke-width="1"/>
+  <!-- Shell -->
+  <circle cx="280" cy="260" r="136" fill="#28a05a" stroke="#0d4a29" stroke-width="1"/>
+  <!-- Kernel -->
+  <circle cx="280" cy="260" r="94" fill="#5ec47c" stroke="#0d4a29" stroke-width="1"/>
+  <!-- Hardware (innermost) -->
+  <circle cx="280" cy="260" r="52" fill="#c8f0d5" stroke="#0d4a29" stroke-width="1"/>
+
+  <!-- Labels -->
+  <text x="280" y="264" text-anchor="middle" dominant-baseline="central"
+        font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#0d4a29">Hardware</text>
+
+  <text x="280" y="204" text-anchor="middle" dominant-baseline="central"
+        font-family="Arial, sans-serif" font-size="13" font-weight="600" fill="#e6f9ed">Kernel</text>
+
+  <text x="280" y="154" text-anchor="middle" dominant-baseline="central"
+        font-family="Arial, sans-serif" font-size="13" font-weight="600" fill="#e6f9ed">Shell</text>
+
+  <text x="280" y="104" text-anchor="middle" dominant-baseline="central"
+        font-family="Arial, sans-serif" font-size="13" font-weight="600" fill="#e6f9ed">Utilities</text>
+
+  <text x="280" y="57" text-anchor="middle" dominant-baseline="central"
+        font-family="Arial, sans-serif" font-size="13" font-weight="600" fill="#e6f9ed">Applications</text>
+
+  <!-- Arrow + callout for Hardware -->
+  <line x1="332" y1="250" x2="430" y2="220" stroke="#555" stroke-width="1.2"
+        marker-end="url(#arrow)"/>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5"
+            markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M1 1L9 5L1 9" fill="none" stroke="#555" stroke-width="1.5"
+            stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+  <text x="435" y="210" font-family="Arial, sans-serif" font-size="12" fill="#333">Terminals</text>
+  <text x="435" y="225" font-family="Arial, sans-serif" font-size="12" fill="#333">Printers</text>
+  <text x="435" y="240" font-family="Arial, sans-serif" font-size="12" fill="#333">Disks</text>
+</svg>
