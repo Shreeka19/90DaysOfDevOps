@@ -1,5 +1,9 @@
 **1. The core components of Linux (kernel, user space, init/systemd)**
 
+
+![OS Architecture](./images/os_architecture.svg)
+
+
 The core components of linux are hardware kernel, Shell and application.
 - Hardware: The physical component where OS is installed. The kernel talks with hardware
 - Kernel: it is the heart of linux, all the interactions happens via kernel. If a user runs a command, it comes to kernel who have the Code for each command which gets executed and user get an answer for same. The code for each command is saved in /bin folder
